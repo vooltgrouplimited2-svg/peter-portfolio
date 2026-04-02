@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter's Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0F172A;
+            padding: 40px 20px;
+            text-align: center;
+            background-image: radial-gradient(#6366F1 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            margin: 0;
+            background: linear-gradient(90deg, #6366F1, #FFFFFF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            color: #6366F1;
+            margin-top: 20px;
+        }
+
+        p {
+            max-width: 600px;
+            margin: 10px auto;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .project {
+            background-color: #1E293B;
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(100% - 40px);
+            max-width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project a {
+            color: #6366F1;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        @media (min-width: 768px) {
+            .project {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (min-width: 1440px) {
+            .project {
+                width: calc(33.333% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Peter</h1>
+        <h2>Web Developer</h2>
+        <p>Crafting Digital Experiences with Precision and Innovation</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Peter is a highly skilled Web Developer with a knack for creating dynamic, user-centric web applications. Leveraging a robust understanding of front-end and back-end technologies, he excels in delivering scalable solutions that enhance user engagement and business growth.</p>
+            <p><strong>Experience:</strong> 5+ years</p>
+            <p><strong>Skills:</strong> JavaScript, React.js, Node.js, CSS3, HTML5, RESTful APIs, Responsive Design, Agile Methodologies</p>
+            <p><strong>Email:</strong> <a href="mailto:akintomiwa0604@gmail.com">akintomiwa0604@gmail.com</a></p>
+        </section>
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3><a href="https://github.com/vooltgrouplimited2-svg/Web-Dev-For-Beginners">Web-Dev-For-Beginners</a></h3>
+                    <p>24 Lessons, 12 Weeks, Get Started as a Web Developer</p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/vooltgrouplimited2-svg/design-resources-for-developers">design-resources-for-developers</a></h3>
+                    <p>Curated list of design and UI resources from stock photos, web templates, CSS frameworks, UI libraries, tools and much more</p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/vooltgrouplimited2-svg/frontend-dev-bookmarks">frontend-dev-bookmarks</a></h3>
+                    <p>Manually curated collection of resources for frontend web developers.</p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/vooltgrouplimited2-svg/gorm">gorm</a></h3>
+                    <p>The fantastic ORM library for Golang, aims to be developer friendly</p>
+                </div>
+                <div class="project">
+                    <h3><a href="https://github.com/vooltgrouplimited2-svg/servo">servo</a></h3>
+                    <p>Servo aims to empower developers with a lightweight, high-performance alternative for embedding web technologies in applications.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
